@@ -6,10 +6,11 @@
 class Randomizer
 {
   private:
-    
+    static Randomizer * instance;
   public:
     Randomizer();
     unsigned int randomBetween(unsigned int minimum, unsigned int maximum);
+    static Randomizer* getInstance();
 };
 
 #endif
